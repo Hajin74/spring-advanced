@@ -6,8 +6,8 @@ import lombok.Getter;
 public class TraceStatus {
 
     private TraceId traceId;
-    private Long startTimeMs;
-    private String message;
+    private Long startTimeMs;   // 로그 시작 시간
+    private String message;     // 시작 시, 사용한 메시지
 
     public TraceStatus(TraceId traceId, Long startTimeMs, String message) {
         this.traceId = traceId;
